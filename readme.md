@@ -1,2 +1,137 @@
-# My Portfolio
-This is my portfolio
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Owning a Pet</title>
+
+    <style>
+        #container {
+            width: 70%;
+            margin: 0 auto;
+            background: linear-gradient(rgba(255,0,0,0), rgb(123, 154, 238));
+            border-radius: 20px;
+            text-align: center;
+            font-family: Arial, Helvetica, sans-serif;
+            
+            padding-bottom: 10px;
+            transition: width 2s;
+            box-shadow: 3px 3px 3px 3px rgb(168, 167, 167);
+        }
+
+         #smallLink {
+            margin: 0 auto;
+            background: linear-gradient(rgba(255,0,0,0), rgb(123, 154, 238));
+            text-decoration: none;
+        }
+
+        small {
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        body{
+            padding: 5px;
+            margin: 0 auto;
+        }
+        h1 {
+            text-align: center;
+            font-size: 45px;
+            color: black;
+            padding: 5px;
+            padding-top: 20px;
+            line-height: 50px;
+        }
+
+        h2 {
+            text-align: center;
+            font-size: 25px;
+            margin: 0 auto;
+
+        }
+
+        img {
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            width: 40%;
+
+        }
+
+        p {
+            line-height: 1.5; 
+            font-size: 17px;
+            margin: 0 auto;
+            padding: 10px;
+            }
+
+        button {
+            display: block;
+            margin: 0 auto;
+            border: 4px ridge rgb(129, 124, 124);
+            border-radius: 10px;
+            background: white;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+
+        <h1> Owning a Pet</h1>
+        <h2 span style="color:rgb(109, 109, 119)"> Learn about the benefits, and sign up to speak with an advisor!</h2> 
+            
+        </h2>
+        
+        <hr>
+        <img src="https://i.pinimg.com/736x/df/cb/b5/dfcbb5f319e6a16b6366eca630e80b3d--corgi-pups-baby-corgi.jpg" alt>
+
+        <p>
+            Have you ever wondered what it would be like to have a <strong>pet of your own</strong>? Are you unsure if this is the right step for
+            you? There are many benefits to owning a pet, and various methods to do so (adopting, buying from a breeder, etc).
+            Having a pet in your life can bring many benefits and teach you more about yourself. Although it can be quite
+            challenging at times, learning to care for a
+            pet as part of your family can teach you new things about yourself and how you navigate situations.
+
+            <br/>
+            <strong>Click link below for more information! ↓↓ </strong>
+
+        </p>
+        <br/>
+
+        <div id="smallLink"></div>
+        <small> <em>
+        <a href="https://www.lifehack.org/879382/benefits-of-having-a-pet" style="color:rgb(53, 51, 53)" target="_blank">Benefits of Owning a Pet</a> 
+        </em>
+        </small>
+        <br/>
+        <br/>
+        <button 
+            class="clickButton" >
+            Click to match up with a pet!
+        </button>
+
+        </div>    
+    </div> 
+
+    <script>
+        function click() {
+            let questionOne = prompt("Are you currently looking to own a pet?");
+            let name = prompt("What is your name?");
+            let email = prompt("Please enter your email.");
+
+            if (questionOne) {
+                alert("Thank you for signing up, " + name + ". An advisor will be in touch with you soon! Please check your email.");
+            } else {   
+            } 
+   
+        }
+
+        let clickButton = document.querySelector(".clickButton");
+        clickButton.addEventListener("click", click);
+    </script>
+
+    
+
+</body>
+</html>
